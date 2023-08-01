@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: blue;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#sobre{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+#sobre img{
+    width: 300px;
+}
+
+#sobre div{
+    margin-left: 30px;
+}
+
+#sobre h2, .produtos h2{
+    color: blue;
+    border-bottom: 2px solid blue;
+    margin-bottom: 25px;
+}
+
+.produtos {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.produtos img{
+    width: 250px;
+    height: 250px;
+}
+
+.produtos .produto{
+    display: grid;
+    grid-template-columns: repeat(4, 24.2%);
+    column-gap: 1%;
+}
+
+article {
+    text-align: center;
+}
+
+article button{
+    background-color: blue;
+    border: none;
+    border-radius: 5px ;
+    padding: 5px 16px;
+    color: #fff;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    #sobre{
+        display: block;
+        text-align: justify;
+        width: 650px;
+    }
+
+    #sobre img{
+        margin-left: 20px;
+        width: 600px;
+    }
+
+    .produtos h2{
+        margin: 30px;
+    }
+
+    .produtos img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .produtos .produto{
+        display: grid;
+        grid-template-columns: repeat(2, 48.4%);
+        column-gap: 1%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    nav ul{
+        display: block;
+        list-style: none;
+    }
+
+    #sobre{
+        display: block;
+        text-align: justify;
+        width: 300px;
+    }
+
+    #sobre img{
+        margin-left: 20px;
+        width: 300px;
+    }
+    
+    .produtos h2{
+        margin: 30px;
+    }
+
+    .produtos img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .produtos .produto{
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        column-gap: 1%;
+    }
+
+}
